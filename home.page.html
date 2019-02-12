@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      App Calculator
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>  
+    <ion-row>
+      <ion-col size="9">
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="num1" placeholder="digite aqui"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-button color="primary"  (click)="somar()"  >+</ion-button>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+     <ion-col size="9">
+        <ion-item>
+            <ion-input type="text" [(ngModel)]="num2" placeholder="digite aqui"></ion-input>
+          </ion-item>
+     </ion-col>
+      <ion-col>
+        <ion-button color="primary"  (click)="multiplicacao()" >×</ion-button> 
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="9">
+        <h3>
+          Total | {{tot}} 
+        </h3>
+      </ion-col>
+      <ion-col>
+        <ion-button color="primary"  (click)="subtracao()" >-</ion-button>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="9"></ion-col>
+      <ion-col>
+          <ion-button color="primary"  (click)="divisao()" >÷</ion-button>
+      </ion-col>
+    </ion-row>
+      
+  </ion-grid>
+</ion-content>
